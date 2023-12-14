@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Aadhar ID</title>
+    <link rel="stylesheet" href="./user.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login with Aadhar ID</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="aadharNumber">Aadhar Number:</label>
+                <input type="text" id="aadharNumber" name="aadharNumber" required>
+            </div>
+            <div id="verifyContainer">
+                <button type="button" onclick="sendOTP()">Verify</button>
+                <p id="otpSentMessage"></p>
+            </div>
+            <div id="otpContainer" style="display: none;">
+                <div class="form-group">
+                    <label for="otp">OTP:</label>
+                    <input type="text" id="otp" name="otp" required>
+                    <button type="button" onclick="resendOTP()">Resend OTP</button>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="login()">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            // You can add JavaScript validation logic here
+            // For example, check if Aadhar number and OTP are valid
+            return true; // Return false to prevent form submission
+        }
+
+        function sendOTP() {
+            // Add logic to send OTP to the provided mobile number
+            document.getElementById("otpSentMessage").innerHTML = "OTP sent successfully!";
+            document.getElementById("verifyContainer").style.display = "none";
+            document.getElementById("otpContainer").style.display = "block";
+        }
+
+        function resendOTP() {
+            // Add logic to resend OTP to the provided mobile number
+            alert('OTP resent successfully!');
+        }
+
+        function login() {
+            // Simulate a login action (replace with your actual login logic)
+            var aadharNumber = document.getElementById("aadharNumber").value;
+            var otp = document.getElementById("otp").value;
+
+            // Simulated login logic (replace with actual logic)
+            if (aadharNumber === "1234567890" && otp === "1234") {
+                alert('Login successful!');
+                // Redirect to a new page after successful login
+                window.location.href = 'userhuidinfo.html'; // Replace with the actual URL of your dashboard page
+            } else {
+                alert('Login failed. Invalid Aadhar number or OTP.');
+            }
+        }
+    </script>
+</body>
+</html>
