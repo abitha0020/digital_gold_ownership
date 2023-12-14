@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            max-width: 40rem;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #2196F3;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 200px;
+        }
+
+        button:hover {
+            background-color: #0b7dda;
+        }
+        #Agreement {
+    margin-top: 20px;
+    text-align: left;
+}
+
+h3 {
+    color: #333;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px; 
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>HUID Details</h1>
+        <img src="../resources/demo huid details.jpg" alt="HUID Details">
+    </div>
+    <div>
+        <form>
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="text" id="loanAmount" name="loanAmount" required>
+
+            <label for="interestRate">Interest Rate:</label>
+            <input type="text" id="interestRate" name="interestRate" required>
+
+            <label for="loanTerm">Loan Term:</label>
+            <input type="text" id="loanTerm" name="loanTerm" required>
+
+            <label for="repaymentAmount">Repayment Amount per Month:</label>
+            <input type="text" id="repaymentAmount" name="repaymentAmount" required>
+
+            <label for="lateFee">Late Fee:</label>
+            <input type="text" id="lateFee" name="lateFee" required>
+
+            <div id="Agreement">
+                <h3>Agreement Policy</h3>
+                <ol>
+                    <li>If the Borrower defaults on its payments and fails to cure said default within a reasonable amount of time, the Lender will have the option to declare the entire remaining amount of principal and any accrued interest immediately due and payable.</li>
+                    <li>Prepayment. The Borrower will not be penalized for early payment.</li>
+                    <li>Severability. In the event any provision of this Agreement is deemed invalid or unenforceable, in whole or in part, that part shall be severed from the remainder of the Agreement and all other provisions shall continue in full force and effect as valid and enforceable. </li>
+                </ol>                 
+            </div>
+
+            <button type="submit">Proceed</button>
+        </form>
+    </div>
+</body
