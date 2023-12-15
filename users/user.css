@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(''); /* Replace 'your-background-image-url.jpg' with the URL or path to your image file */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +13,7 @@ body {
 }
 
 .login-container {
-    background-color: #ffffff; /* Light gold/yellow color */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
