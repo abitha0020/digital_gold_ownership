@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.816);
 }
 
 .login-container {
