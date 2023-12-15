@@ -6,14 +6,27 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1251db;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
 }
 
 .login-container {
     background-color: #ffffff; 
+    margin:150px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
