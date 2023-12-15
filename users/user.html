@@ -33,33 +33,26 @@
 
     <script>
         function validateForm() {
-            // You can add JavaScript validation logic here
-            // For example, check if Aadhar number and OTP are valid
-            return true; // Return false to prevent form submission
+            return true; 
         }
 
         function sendOTP() {
-            // Add logic to send OTP to the provided mobile number
             document.getElementById("otpSentMessage").innerHTML = "OTP sent successfully!";
             document.getElementById("verifyContainer").style.display = "none";
             document.getElementById("otpContainer").style.display = "block";
         }
 
         function resendOTP() {
-            // Add logic to resend OTP to the provided mobile number
             alert('OTP resent successfully!');
         }
 
         function login() {
-            // Simulate a login action (replace with your actual login logic)
             var aadharNumber = document.getElementById("aadharNumber").value;
             var otp = document.getElementById("otp").value;
 
-            // Simulated login logic (replace with actual logic)
             if (aadharNumber === "1234567890" && otp === "1234") {
                 alert('Login successful!');
-                // Redirect to a new page after successful login
-                window.location.href = 'userhuidinfo.html'; // Replace with the actual URL of your dashboard page
+                window.location.href = 'userhuidinfo.html';
             } else {
                 alert('Login failed. Invalid Aadhar number or OTP.');
             }
