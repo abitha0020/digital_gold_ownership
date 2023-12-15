@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
-    background-color: #fffafd;
+    background-color: rgba(0, 0, 0, 0.816);
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,7 @@ header {
 
 header h1 {
     margin: 0;
-    color: #000000;
+    color: #ffffff;
 }
 
 .home-button {
