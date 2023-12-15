@@ -54,14 +54,18 @@ body {
     cursor: pointer;
     border-radius: 4px;
     margin: 0 5px;
-    background-color: #1251db;
-    color: #000000;
+    background-color: goldenrod;
+    color: #ffffff;
     font-size: 14px;
     transition: background-color 0.3s;
 }
 
 .form-group button:hover {
-    background-color: #fab700;
+    background-color: #ffffff;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    width: max-content;
+    
 }
 
 .form-group button.secondary {
@@ -74,6 +78,9 @@ body {
 
 #otpContainer {
     display: none;
+}
+#optConatainer > button{
+    background-color: goldenrod;
 }
 
 #verifyContainer{
