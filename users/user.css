@@ -10,6 +10,9 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f4f4f4;
+    justify-content: center;
+    height: 100vh;
+    background-color: aliceblue;
 }
 
 header {
@@ -30,16 +33,19 @@ header h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
+    height: max-content;
 }
 
 .login-container h2 {
     text-align: center;
     color: #0a0a0a;
+    margin-bottom: 25px;
 }
 
 .form-group {
     margin-bottom: 15px;
+    
 }
 
 .form-group label {
@@ -84,4 +90,18 @@ header h1 {
 
 #otpContainer {
     display: none;
+}
+
+#verifyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#verifyContainer > button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: goldenrod;
+    color: #ffffff;
 }
